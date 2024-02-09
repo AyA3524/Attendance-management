@@ -1,20 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee</title>
+    <title>Employee portal</title>
     <link rel="stylesheet" href="stylespoint.css">
 </head>
 <body>
     <div class="container">
         <img src="naftal.jpg" alt="Naftal Logo" class="logo">
         <div class="button-container">
-            <button class="button">Pointing</button>
+            <button id="pointing-btn" class="button">Pointing</button>
             <button class="button">Display Attendance Details</button>
         </div>
     </div>
+
+    <script>
+        document.getElementById("pointing-btn").addEventListener("click", function() {
+            // Get current date and time
+            var dateTime = new Date();
+            var date = dateTime.toISOString().split('T')[0];
+            var time = dateTime.toLocaleTimeString();
+
+            // Get current day
+            var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            var day = days[dateTime.getDay()];
+
+            // Send AJAX request to insert data into the database
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "insertAttendance.php", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        console.log("Attendance recorded successfully.");
+                    } else {
+                        console.error("Failed to record attendance.");
+                    }
+                }
+            };
+            xhr.send("date=" + date + "&time=" + time + "&day=" + day);
+        });
+    </script>
 </body>
 </html>
+
+
+
 
