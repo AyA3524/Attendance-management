@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Bleu clair */
+}
+
+.container {
+    position: relative; /* Ajout de position relative pour permettre le positionnement absolu de l'image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute; /* Position absolue pour placer le logo par rapport à son conteneur parent */
+    top: 20px; /* Distance par rapport au haut */
+    left: 20px; /* Distance par rapport à la gauche */
+    width: 100px; /* Largeur de l'image */
+    height: auto; /* Hauteur ajustée automatiquement pour conserver les proportions */
+}
+
+.signin-form {
+    background-color: #ffff00; /* Jaune */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre */
+    width: 300px;
+}
+
+.signin-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e90ff; /* Bleu */
+    font-weight: bold; /* Plus gras */
+    font-size: 24px; /* Taille du texte */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4169e1; /* Bleu plus foncé */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #1e90ff; /* Bleu */
+}
