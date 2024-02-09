@@ -1,9 +1,9 @@
 <?php
 // Connexion à la base de données
-$servername = "localhost"; // Nom du serveur (généralement localhost)
-$username = "root"; // Nom d'utilisateur MySQL
-$password = ""; // Mot de passe MySQL
-$database = "database"; // Nom de votre base de données
+$servername = "localhost"; 
+$username = "root"; 
+$password = ""; 
+$database = "database"; 
 $conn = new mysqli($servername, $username, $password, $database);
 
 // Vérifier la connexion
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
         // Afficher un message d'erreur si les identifiants sont incorrects
-        header("Location: erreur.html");
+        header("Location: error.html");
         echo "<script>alert('Identifiants incorrects.');</script>";
     }
 }
