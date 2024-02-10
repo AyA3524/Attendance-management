@@ -1,4 +1,3 @@
-
 <?php
 session_start(); // Démarre la session pour stocker les données de l'utilisateur connecté
 
