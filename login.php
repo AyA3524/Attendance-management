@@ -1,9 +1,12 @@
+
 <?php
+session_start(); // Démarre la session pour stocker les données de l'utilisateur connecté
+
 // Connexion à la base de données
-$servername = "localhost"; 
-$username = "root"; 
-$password = ""; 
-$database = "database"; 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "database";
 $conn = new mysqli($servername, $username, $password, $database);
 
 // Vérifier la connexion
@@ -25,7 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Vérifier si des résultats ont été trouvés
     if ($result->num_rows > 0) {
-        // Rediriger l'utilisateur vers une autre page
+        // Enregistre les données de l'utilisateur dans la session
+        $_SESSION['id'] = $id;
+        $_SESSION['name'] = $name;
+        
         header("Location: pointing.html");
         exit();
     } else {
