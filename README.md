@@ -1,6 +1,6 @@
 The Attendance Verification Mobile Application is designed to address the issue of employees feeling uncertain about the accuracy of automatic attendance systems. It provides a solution that allows employees to verify their attendance status and view detailed timestamps of their check-ins, ensuring transparency and accountability in the attendance tracking process. By empowering users to confirm their presence with precise date and time records,
 the application aims to enhance trust and reliability in attendance management.
-First, we simulated both the automatic attendance recording machine as a web page, and we also simulated the mobile application in the form of a web page that allows displaying attendance details for each worker. 
+**First, we simulated both the automatic attendance recording machine as a web page, and we also simulated the mobile application in the form of a web page that allows displaying attendance details for each worker. 
 below are the key points detailling the project progress : 
 1. Creation of Database Using XAMPP:
    - Utilizing XAMPP, we managed to set up a MySQL database to store comprehensive information about workers, including their names, functions, IDs, and passwords. This database serves as the foundation for managing worker data efficiently.
