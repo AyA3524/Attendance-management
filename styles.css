@@ -2,11 +2,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Bleu clair */
+    background-color: #ebeee8; 
 }
 
+
 .container {
-    position: relative; /* Ajout de position relative pour permettre le positionnement absolu de l'image */
+    position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,27 +15,27 @@ body {
 }
 
 .logo {
-    position: absolute; /* Position absolue pour placer le logo par rapport à son conteneur parent */
-    top: 20px; /* Distance par rapport au haut */
-    left: 20px; /* Distance par rapport à la gauche */
-    width: 100px; /* Largeur de l'image */
-    height: auto; /* Hauteur ajustée automatiquement pour conserver les proportions */
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    width: 100px; 
+    height: auto; 
 }
 
 .signin-form {
-    background-color: #ffff00; /* Jaune */
+    background-color: #ffff00; 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre */
+    box-shadow: 0 0 10px #2268c4; 
     width: 300px;
 }
 
 .signin-form h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #1e90ff; /* Bleu */
-    font-weight: bold; /* Plus gras */
-    font-size: 24px; /* Taille du texte */
+    color: #2268c4; 
+    font-weight: bold; 
+    font-size: 24px; 
 }
 
 .form-group {
@@ -58,12 +59,12 @@ button[type="submit"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #4169e1; /* Bleu plus foncé */
+    background-color: #4169e1; 
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button[type="submit"]:hover {
-    background-color: #1e90ff; /* Bleu */
+    background-color: #2268c4; 
 }
