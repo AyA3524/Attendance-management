@@ -26,7 +26,7 @@ if ($conn->connect_error) {
 $sql_employee = "SELECT * FROM employee WHERE id='$employee_id'";
 $result_employee = $conn->query($sql_employee);
 
-// Récupérer les informations de l'employé
+// Récupérer les informations 
 if ($result_employee->num_rows > 0) {
     $employee_data = $result_employee->fetch_assoc();
     $employee_name = $employee_data['name'];
