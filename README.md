@@ -18,6 +18,3 @@ below are the key points detailling the project progress :
 4. Technologies Utilized:
    - We have used various technologies, including XAMPP for database management, HTML and CSS for web interface design, PHP for server-side scripting, and MySQL for database operations.
 
-**Contributors : 
-_https://github.com/avex0
-_https://github.com/wardia123
